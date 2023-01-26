@@ -14,10 +14,27 @@
         const tempatWisata = "Batu marmer";
         const kabupaten = "Timor Tengah Selatan";
 
-        const ntt = `Nama Provinsi: ${provinsi} <br> Nama Pulau: ${pulau} <br> Wisata Alam: ${tempatWisata} <br> Kabupaten: ${kabupaten} `
+        const ntt = `Nama Provinsi: ${provinsi} <br> Nama Pulau: ${pulau} <br> Wisata Alam: ${tempatWisata} <br> Kabupaten: ${kabupaten}<br><br> `
 
+        document.writeln(ntt);
 
-        document.writeln(ntt)
+        
+
+        // Exprssion di string tamplate
+        const nama = "Dynno";
+        const nilaiUjian = 80;
+        const nilaiKelulusan = `Nama: ${nama}, Lulus: ${nilaiUjian > 70}`;
+        
+        document.writeln(nilaiKelulusan);
+
+        // Multiline String
+        const multiLineString = `Halo, nama saya Dynno,
+Saya ingin menjadi Programmer,
+saat ini saya sedang belajar fundamental Javascript`;
+
+        document.writeln("<pre>")
+        document.writeln(multiLineString);
+        document.writeln("</pre>");
 
     </script>
 </body>
