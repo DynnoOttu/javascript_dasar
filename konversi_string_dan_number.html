@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String dan Number</title>
+</head>
+<body>
+    <script>
+
+        // konversi string ke number
+        const nilai1 = parseInt("1");
+        const nilai2 = 1;
+
+        const total = nilai1 + nilai2;
+
+        document.writeln(`${total}`);
+
+        document.writeln(`<p>${parseInt("1.1")}</p>`);
+        document.writeln(`<p>${parseFloat("1.1")}</p>`);
+        document.writeln(`<p>${Number("1.1")}</P>`);
+
+        // konversi number ke string
+        const a = 5;
+        const b = 6;
+
+        const jumlah = a.toString() + b.toString();
+         
+        document.writeln(`<p>${jumlah}</p>`)
+
+        // not a number
+        document.writeln(`<p>${parseInt("1satu")}</P>`);
+        document.writeln(`<p>${parseFloat("2dua")}</p>`);
+        document.writeln(`<p>${Number("2Salah")}</p>`);
+
+        const nilaiPertama = Number("Nilai Pertama");
+        const nilaiKeDua = 10
+        const totalNilai = nilaiPertama + nilaiKeDua;
+        document.writeln(totalNilai);
+
+        document.writeln(`<p>${isNaN(nilaiPertama)}</p>`);
+        document.writeln(`<p>${isNaN(10)}</p>`);
+
+
+        
+    </script>
+</body>
+</html>

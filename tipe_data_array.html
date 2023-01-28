@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe data array</title>
+</head>
+<body>
+    <script>
+        let arrayKosong = [];
+
+        let nama = ["Dynno", "Yohanis", "Ottu"];
+
+        // Operasi di array
+        const kabupaten = [];
+        kabupaten.push("Kabupaten Kupang");
+        kabupaten.push("Kabupaten Timur Tenggah Selatan");
+        kabupaten.push("Kabupaten Timur Tengah utara");
+    
+        console.table(kabupaten);
+
+        console.info(kabupaten[2]);
+        console.info(kabupaten[0]);
+
+         kabupaten[2] = "Kabupaten Alor";
+         kabupaten[0] = "Kabupaten Sumba";
+
+         console.table(kabupaten);
+
+        delete kabupaten[2];
+        delete kabupaten[0];
+        console.table(kabupaten);
+
+        // memasukan array ke dalam array
+        kabupaten.push(["Kota Kupang", "Soe", "Lelogama", 123]);
+        console.table(kabupaten)
+
+
+
+
+    </script>
+</body>
+</html>
