@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const biodata = {};
+
+        biodata["nama"] = "Dynno Ottu";
+        biodata["Alamat"] = "Manutapen";
+        biodata["umur"] = 23;
+
+        console.table(biodata);
+
+        // Menghapus Objek
+        delete biodata["Alamat"];
+
+        console.table(biodata);
+
+        // Membuat objek dengan properti
+        const dataBarang = {
+            "Nama Barang" : "Kursi",
+            "Jenis Barang" : "Kayu Jati",
+            Jumlah : 20,
+        }
+
+        
+
+        console.table(dataBarang);
+
+        // Mengakses properti
+        console.info(`Nama: ${dataBarang["Nama Barang"]}`)
+        console.info(`Jumlah: ${dataBarang.Jumlah}`);
+        console.info(`Jenis Barang: ${dataBarang["Jenis Barang"]}`);
+    </script>
+</body>
+</html>

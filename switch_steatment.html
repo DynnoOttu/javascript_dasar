@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nilai = "D"
+
+        switch (nilai) {
+            case "A":
+                document.writeln(`Anda lulusan terbaik`);
+                break;
+            case "B":
+                document.writeln(`Anda mendapatkan Nilai ${nilai}`)
+                break;
+            case "C":
+            case "D":
+                document.writeln(`Anda mendapatkan nilai ${nilai} hampir tidak lulus`);
+                break;
+            default:
+                document.writeln(`anda tidak lulus`)
+                break;
+        }
+    </script>
+</body>
+</html>
